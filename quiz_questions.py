@@ -9,63 +9,63 @@ quiz_qna = [
     {
         # 2
         "question": "Which of these animals did Roosevelt NOT own?", 
-        "options": ["Z", "X", "Q", "Y"],
+        "options": ["Sheep", "Rooster", "Bea", "Hyena"],
         "answer": "Sheep"
     },
 
     {
         # 3
         "question": "Who was the 14th President of The United States?", 
-        "options": ["Z", "X", "Q", "Y"],
+        "options": ["Millard Fillmore", "James Buchanan", "John Tyler", "Franklin Pierce"],
         "answer": "Franklin Pierce"
     },
 
     {
         # 4
-        "question": "WWhat is the national animal of Rhode Island?", 
-        "options": ["Z", "X", "Q", "Y"],
+        "question": "What is the national animal of Rhode Island?", 
+        "options": ["The Sperm Whale", "The Harbor Seal", "The Great White Shark", "The King Salmon"],
         "answer": "The Haror Seal"
     },
 
     {
         # 5
         "question": "Which state was German chocolate cake made", 
-        "options": ["Z", "X", "Q", "Y"],
+        "options": ["Texa", "New Mexico", "Arizona", "Utah"],
         "answer": "Texas"
     },
 
     {
         # 6
         "question": "What is the official language of the United States", 
-        "options": ["Z", "X", "Q", "Y"],
+        "options": ["English", "Spanish", "Both English & Spanish", "None"],
         "answer": "None"
     },
 
     {
         # 7
         "question": "Idaho is also known as...?", 
-        "options": ["Z", "X", "Q", "Y"],
+        "options": ["The Hawkeye State", "The Gem State", "The Sunshine State", "The Hoosier Stte"],
         "answer": "The Gem State"
     },
 
     {
         # 8
         "question": "What is the most used color in the state flags", 
-        "options": ["Z", "X", "Q", "Y"],
+        "options": ["Red", "Yellow", "Blue", "White"],
         "answer": "Blue"
     },
 
     {
         # 9
         "question": "What is the ZIP Code of the Empire State Building?", 
-        "options": ["Z", "X", "Q", "Y"],
+        "options": ["10188", "10018", "81011", "88101"],
         "answer": "10188"
     },
 
     {
         # 10
         "question": "What is the most popular surname in California?", 
-        "options": ["Z", "X", "Q", "Y"],
+        "options": ["Martinez", "Smith", "Garcia", "Johnson"],
         "answer": "Garcia"
     },
 ]
