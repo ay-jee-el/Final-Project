@@ -1,13 +1,18 @@
 import tkinter as tk
-from quiz_questions import quiz_questions
-
 from quiz_questions import quiz_qna
 
 class Quiz:
     def __init__(self):
         # boots up quiz? 
-    # will include aspects of the quiz. likle ywilll need v arious defs (pass, questions, answers, etc)
+
+        self.question = 0
+        self.score = 0
+
+    # questions, answer, choiches, LAYOUT for all this, calucations for correct nd wrong, output
+    # ^^ will include aspects of the quiz. likle ywilll need various defs
 
 
 def main():
     #main file!! will import clases into here and display/ run?
+
+    print(Quiz)
