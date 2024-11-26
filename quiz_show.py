@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 from quiz_questions import quiz_qna
 
 class Quiz:
@@ -54,7 +55,8 @@ class Quiz:
 
     def calculate(self):
             # math for how many correct
-        messa
+        messagebox.showinfo("Complete")
+        self.master.destroy()
 
 if __name__ == "__main__":
     # nsure why if is messing it up?
