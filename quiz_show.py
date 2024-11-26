@@ -26,14 +26,14 @@ class Quiz:
             rb = tk.Radiobutton(self.master, text=option, variable=self.var, value=option)
             rb.pack()
 
-        self.next = tk.Button(self.master, text="Next", command=self.check_answer)
-        self.next.pack(pady=10)
+        self.next_button = tk.Button(self.master, text="Next", command=self.check_answer)
+        self.next_button.pack(pady=10)
 
     def check_answer(self):
-            # if check if the "choice" olines up with what was clicked
-            # if answer == "answer", then score += 1 (?)
-            if self.var.get() == self.questions[self.qn]["correct"]:
+            if self.var.get() == self.questions[self.qn]["answer"]:
                 self.score += 1
+
+            self.qn += 1
 
             if self.qn < len(self.questions):
                  self.next()
@@ -54,7 +54,7 @@ class Quiz:
 
     def calculate(self):
             # math for how many correct
-        messagebox.showinfo("Complete")
+        messagebox.showinfo("Complete!",f"Your score: {self.score}/{len(self.questions)}")
         self.master.destroy()
 
 if __name__ == "__main__":
