@@ -63,3 +63,9 @@ if __name__ == "__main__":
     root = tk.Tk()
     quiz = Quiz(root)
     root.mainloop()
+
+# Succesfully works! But now have to figure out:
+     # Why the first question is formatted oddly
+     # How to have the question box remain the same size
+     # Maybe some color and flair?
+     # spelling errors in questions and answers
