@@ -4,12 +4,11 @@ from quiz_questions import quiz_qna
 
 class Quiz:
     #Doesnt appear? runs w no errors tho
-    def __init__(self, master, score = 0):
+    def __init__(self, master):
         # boots up quiz? 
         self.master = master
-        
         self.qn = 0
-        self.score = score
+        self.score = 0
         self.questions = quiz_qna
 
         self.layout()
@@ -19,16 +18,16 @@ class Quiz:
     def layout(self):
             #layout and imports for tkinter layout (look into this)
         self.lable = tk.Label(self.master, text=self.questions[self.qn]["question"])
-        self.lable.pack(padding=10)
+        self.lable.pack(pady=10)
 
         self.var = tk.StringVar()
 
         for option in self.questions[self.qn]["question"]:
-            radiobutton = tk.Radiobutton(self.master, text=option, variable=self.var, value=option)
-            radiobutton.pack()
+            rb = tk.Radiobutton(self.master, text=option, variable=self.var, value=option)
+            rb.pack()
 
         self.next = tk.Button(self.master, text="Next", command=self.check_answer)
-        self.next.pack(pading=10)
+        self.next.pack(pady=10)
 
     def check_answer(self):
             # if check if the "choice" olines up with what was clicked
