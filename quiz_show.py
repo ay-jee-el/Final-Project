@@ -17,13 +17,15 @@ class Quiz:
     # ^^ will include aspects of the quiz. likle ywilll need various defs
     def layout(self):
             #layout and imports for tkinter layout (look into this)
-        self.label = tk.Label(self.master, text=self.questions[self.qn]["question"])
+        root.geometry("400x300")
+        root.configure(bg="lightblue")
+        self.label = tk.Label(self.master, text=self.questions[self.qn]["question"], bg="lightblue")
         self.label.pack(pady=10)
 
         self.var = tk.StringVar()
 
         for option in self.questions[self.qn]["options"]:
-            rb = tk.Radiobutton(self.master, text=option, variable=self.var, value=option)
+            rb = tk.Radiobutton(self.master, text=option, variable=self.var, value=option, bg="lightblue")
             rb.pack()
 
         self.next_button = tk.Button(self.master, text="Next", command=self.check_answer)
