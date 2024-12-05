@@ -9,7 +9,7 @@ quiz_qna = [
     {
         # 2
         "question": "Which of these animals did Roosevelt NOT own?", 
-        "options": ["Sheep", "Rooster", "Bea", "Hyena"],
+        "options": ["Sheep", "Rooster", "Bear", "Hyena"],
         "answer": "Sheep"
     },
 
@@ -24,13 +24,13 @@ quiz_qna = [
         # 4
         "question": "What is the national animal of Rhode Island?", 
         "options": ["The Sperm Whale", "The Harbor Seal", "The Great White Shark", "The King Salmon"],
-        "answer": "The Haror Seal"
+        "answer": "The Harbor Seal"
     },
 
     {
         # 5
         "question": "Which state was German chocolate cake made", 
-        "options": ["Texa", "New Mexico", "Arizona", "Utah"],
+        "options": ["Texas", "New Mexico", "Arizona", "Utah"],
         "answer": "Texas"
     },
 
