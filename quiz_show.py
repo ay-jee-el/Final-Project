@@ -15,15 +15,18 @@ class Quiz:
     def layout(self):
         root.geometry("600x250")
         root.configure(bg="lightblue")
-        self.label = tk.Label(self.master, text=self.questions[self.qn]["question"], fg="darkblue", bg="lightblue", font=("Helvetica", 14))
+        self.label = tk.Label(self.master, text=self.questions[self.qn]["question"],
+                              fg="darkblue", bg="lightblue", font=("Helvetica", 14))
         self.label.pack(pady=10)
-        self.next_button = tk.Button(self.master, text="Next", command=self.check_answer, bg="darkblue", fg="lightblue", font=("Helvetica", 14))
+        self.next_button = tk.Button(self.master, text="Next", command=self.check_answer,
+                                     bg="darkblue", fg="lightblue", font=("Helvetica", 14))
         self.next_button.pack(pady=10)
 
         self.var = tk.StringVar()
 
         for option in self.questions[self.qn]["options"]:
-            rb = tk.Radiobutton(self.master, text=option, variable=self.var, value=option, fg="darkblue", bg="lightblue", font=("Helvetica", 12))
+            rb = tk.Radiobutton(self.master, text=option, variable=self.var, value=option,
+                                fg="darkblue", bg="lightblue", font=("Helvetica", 12))
             rb.pack()
 
 
@@ -45,7 +48,8 @@ class Quiz:
                       wgt.destroy()
             
             for option in self.questions[self.qn]["options"]:
-                 radiobutton = tk.Radiobutton(self.master, text=option, variable=self.var, value=option, fg="darkblue", bg="lightblue", font=("Helvetica", 12))
+                 radiobutton = tk.Radiobutton(self.master, text=option, variable=self.var,
+                                              value=option, fg="darkblue", bg="lightblue", font=("Helvetica", 12))
                  radiobutton.pack()
 
     def calculate(self):
