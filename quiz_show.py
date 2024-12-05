@@ -54,5 +54,6 @@ class Quiz:
 
 if __name__ == "__main__":
     root = tk.Tk()
+    root.title("U.S Pop Quiz!")
     quiz = Quiz(root)
     root.mainloop()
